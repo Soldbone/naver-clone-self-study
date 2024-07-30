@@ -112,8 +112,20 @@
             left: -12px;
             padding: 8px;
         }
+        #header-hamburger:hover::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            background-color: var(--color_option_bg);
+            border-radius: 50%;
+        }
         #header-hamburger::after {
             content: '';
+            position: relative;
             display: inline-block;
             background-image: url(./sp_main.png);
             background-size: 458px 444px;
@@ -121,10 +133,6 @@
             background-repeat: no-repeat;
             width: 32px;
             height: 32px;
-        }
-        #header-hamburger:hover {
-            background-color: var(--color_option_bg);
-            border-radius: 50%;
         }
         #header-pay {
             display: inline-block;
@@ -136,8 +144,20 @@
             height: 48px;
             padding: 8px;
         }
+        #header-pay:hover::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            background-color: var(--color_option_bg);
+            border-radius: 50%;
+        }
         #header-pay::after {
             content: '';
+            position: relative;
             display: inline-block;
             background-image: url(https://pm.pstatic.net/resources/asset/sp_main.e0b0b60f.png);
             background-size: 458px 444px;
@@ -145,10 +165,6 @@
             background-repeat: no-repeat;
             width: 32px;
             height: 32px;
-        }
-        #header-pay:hover {
-            background-color: var(--color_option_bg);
-            border-radius: 50%;
         }
         #main {
             height: 2000px;
