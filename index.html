@@ -363,6 +363,9 @@
                     width: 50px;
                     height: 50px;
                 }
+                #nav li:not(:nth-last-child(2)) a:hover div::before {
+                    background-position: -102px -107px;
+                }
                 #nav li a div::after {
                     content: "";
                     position: absolute;
@@ -420,6 +423,12 @@
                 #nav li:nth-of-type(11) a div::after {
                     background-position: -41px -229px;
                 }
+                #nav li:nth-of-type(11) div:hover::before {
+                    background-position: -142px -51px;
+                }
+                #nav li:nth-of-type(11) div:hover::after {
+                    background-position: 0px -229px;
+                }
                 #nav li:nth-of-type(12) {
                     width: initial;
                     position: relative;
@@ -443,6 +452,10 @@
                     background-color: gray;
                     mask-image: url("data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M35.8916%204.05844C34.4994%202.6636%2032.7598%201.66622%2030.8527%201.16957C29.6805%200.675129%2026.2138%20-0.0109778%2019.9694%200.000133254C13.725%200.0112443%2010.2473%200.708462%209.08618%201.2029C5.21209%202.23714%202.19023%205.2696%201.16957%209.14729C0.675129%2010.3195%20-0.0109778%2013.8306%200.000133254%2020.0333C0.0112443%2026.2361%200.708462%2029.7555%201.20568%2030.9138C2.23787%2034.7881%205.26978%2037.8105%209.14729%2038.8304C10.3195%2039.3249%2013.7139%2040.011%2020.0333%2039.9999C26.3527%2039.9888%2029.7555%2039.2943%2030.9138%2038.7971C34.7879%2037.7629%2037.8098%2034.7304%2038.8304%2030.8527C39.3249%2029.6805%2040.011%2026.1555%2039.9999%2019.9667C39.9888%2013.7778%2039.2943%2010.2445%2038.7971%209.08618C38.2933%207.18157%2037.2902%205.44593%2035.8916%204.05844V4.05844Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
                     mask-repeat: no-repeat;
+                }
+                #nav li:nth-of-type(12) a:hover div::before {
+                    content: "";
+                    background-position: -102px -107px;
                 }
                 #nav li:nth-of-type(12) a {
                     width: 83px;
