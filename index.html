@@ -341,6 +341,7 @@
                     text-decoration: none;
                     color: black;
                     text-align: center;
+                    height: 68px;
                 }
                 #nav a:visited {
                     color: black;
@@ -477,7 +478,7 @@
                     line-height: 20px;
                 }
             </style>
-            <div id="nav">
+            <nav id="nav">
                 <ul>
                     <li>
                         <a href="#">
@@ -555,8 +556,95 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div id="main"></div>
+            </nav>
+            <style>
+                #main {
+                    margin-top: 28px;
+                    display: flex;
+                }
+                #main-left {
+                    width: 830px;
+                    margin-right: 30px;
+                }
+                #main-right {
+                    width: 420px;
+                }
+                #main-left-ad, #main-right-ad, #main-right-ad2 {
+                    background-color: gray;
+                }
+                aside[id$=ad] {
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                #main-left-ad {
+                    height: 130px;
+                    margin-bottom: 16px;
+                }
+                section[id^=main] {
+                    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                #main-newstand {
+                    height: 426px;
+                }
+                #main-shopping {
+                    height: 560px;
+                }
+                #main-right-login {
+                    height: 164px;
+                }
+                #main-right-ad {
+                    height: 240px;
+                }
+                #main-right-issue, #main-right-event, #main-right-ad2 {
+                    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                #main-right-issue {
+                    height: 56px;
+                }
+                #main-right-event {
+                    display: inline-block;
+                    overflow: hidden;
+                    height: 80px;
+                    background-color: gray;
+                    margin-bottom: 14px;
+                }
+                #main-right-ad2 {
+                    height: 172px;
+                }
+                #main-weather, #main-stock {
+                    padding: 0 18px;
+                }
+                #main-weather {
+                    height: 236px;
+                }
+                #main-stock {
+                    height: 236px;
+                }
+            </style>
+            <main id="main">
+                <div id="main-left">
+                    <aside id="main-left-ad"></aside>
+                    <section id="main-newstand"></section>
+                    <section id="main-shopping"></section>
+                </div>
+                <div id="main-right">
+                    <section id="main-right-login"></section>
+                    <aside id="main-right-ad"></aside>
+                    <aside id="main-right-issue"></aside>
+                    <a id="main-right-event">
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240805_1095/upload_1722820902326S0feF.png" width="420" height="80" alt="네이버쇼핑 최강세일 기간 08/05(월) ~ 08/11(일) 강세일">
+                    </a>
+                    <aside id="main-right-ad2">
+
+                    </aside>
+                    <section id="main-weather"></section>
+                    <section id="main-stock"></section>
+                </div>
+            </main>
         </div>
     </div>
 </body>
