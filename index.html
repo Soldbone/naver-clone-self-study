@@ -588,11 +588,81 @@
                 #main-newstand {
                     height: 426px;
                 }
+                #main-newstand a {
+                    text-decoration: none;
+                }
+                #main-newstand a:hover {
+                    text-decoration: underline;
+                }
                 #main-shopping {
                     height: 560px;
                 }
-                #main-right-login {
+                #main-login {
+                    display: flex;
+                    flex-flow: column;
+                    box-sizing: border-box;
                     height: 164px;
+                    padding: 21px 20px 18px;
+                    font-size: 1.4rem;
+                }
+                #main-login > div:first-of-type {
+                    line-height: 20px;
+                }
+                #main-login-button {
+                    box-sizing: border-box;
+                    margin-top: 13px;
+                    padding: 17px 0;
+                    background-color: #03c75a;;
+                    color: white;
+                    border: 1px solid rgba(0, 0, 0, .06);
+                    border-radius: 4px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    height: 56px;
+                    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+                    margin-bottom: 16px;
+                }
+                #main-login-button:hover {
+                    background-color: #17b75e;
+                    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .24);
+                }
+                #main-login-button i {
+                    background-image: url(./sp_main2.png);
+                    background-size: 443px 424px;
+                    background-position: -130px -270px;
+                    background-repeat: no-repeat;
+                    width: 72px;
+                    height: 14px;
+                    display: inline-block;
+                    margin: 3px 8px 0 0;
+                    vertical-align: -1px;
+                }
+                #main-login > div:last-of-type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3rem;
+                }
+                #main-login > div:last-of-type a {
+                    text-decoration: none;
+                    color: var(--color_caption2);
+                    letter-spacing: -0.4px;
+                }
+                #main-login > div:last-of-type a:hover {
+                    text-decoration: underline;
+                }
+                #main-login > div:last-of-type > a:nth-of-type(2)::before, #main-login > div:last-of-type > a:nth-of-type(2)::after {
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: 12px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    margin: 4px 12px 0;
+                }
+                #main-login > div:last-of-type a:first-of-type, #main-login > div:last-of-type a:last-of-type {
+                    position: relative;
+                    top: 2px;
                 }
                 #main-right-ad {
                     height: 240px;
@@ -628,11 +698,76 @@
             <main id="main">
                 <div id="main-left">
                     <aside id="main-left-ad"></aside>
-                    <section id="main-newstand"></section>
+                    <section id="main-newstand">
+                        <div>
+                            <header>
+                                <a href="#">뉴스스탠드</a>
+                                <a href="#">언론사편집</a>
+                                <a href="#">엔터</a>
+                                <a href="#">스포츠</a>
+                                <a href="#">경제</a>
+                                <a href="#">쇼핑투데이</a>
+                            </header>
+                            <div>
+                                <div id="main-newstand-gray">
+                                    <a href="#">전체언론사</a>
+                                    <a href="#">연합뉴스</a>
+                                    <a href="#">제로초 네이버 클론 강의 인기의 비결은 실용적인 코드 작성 시연</a>
+                                </div>
+                                <div>
+                                    <a href="#">뉴스스탠드</a>
+                                    <a href="#">뉴스홈</a>
+                                </div>
+                            </div>
+                            <div id="main-newstand-grid">
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                                <div>언론사</div>
+                            </div>
+                        </div>
+                        <footer>
+                            <button><span class="blind">이전</span></button>
+                            <div>언론사 더보기 1/4</div>
+                            <button><span class="blind">다음</span></button>
+                            <button><span class="blind">목록보기</span></button>
+                            <button><span class="blind">격자보기</span></button>
+                        </footer>
+                    </section>
                     <section id="main-shopping"></section>
                 </div>
                 <div id="main-right">
-                    <section id="main-right-login"></section>
+                    <section id="main-login">
+                        <div>네이버를 더 안전하고 편리하게 이용하세요</div>
+                        <a href="#" id="main-login-button">
+                            <i><span class="blind">NAVER</span></i>로그인
+                        </a>
+                        <div>
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </section>
                     <aside id="main-right-ad"></aside>
                     <aside id="main-right-issue"></aside>
                     <a id="main-right-event">
