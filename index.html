@@ -585,15 +585,6 @@
                     border-radius: 8px;
                     margin-bottom: 16px;
                 }
-                #main-newstand {
-                    height: 426px;
-                }
-                #main-newstand a {
-                    text-decoration: none;
-                }
-                #main-newstand a:hover {
-                    text-decoration: underline;
-                }
                 #main-shopping {
                     height: 560px;
                 }
@@ -667,20 +658,13 @@
                 #main-right-ad {
                     height: 240px;
                 }
-                #main-right-issue, #main-right-event, #main-right-ad2 {
+                #main-right-issue, #main-right-ad2 {
                     box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
                     border-radius: 8px;
                     margin-bottom: 16px;
                 }
                 #main-right-issue {
                     height: 56px;
-                }
-                #main-right-event {
-                    display: inline-block;
-                    overflow: hidden;
-                    height: 80px;
-                    background-color: gray;
-                    margin-bottom: 14px;
                 }
                 #main-right-ad2 {
                     height: 172px;
@@ -694,14 +678,78 @@
                 #main-stock {
                     height: 236px;
                 }
+                #main-newstand {
+                    display: flex;
+                    flex-flow: column;
+                    height: 426px;
+                }
+                #main-newstand-top {
+                    flex: 1;
+                    padding: 18px 20px;
+                }
+                #main-newstand a {
+                    text-decoration: none;
+                }
+                #main-newstand a:visited {
+                    color: inherit;
+                }
+                #main-newstand a:hover {
+                    text-decoration: underline;
+                }
+                #main-newstand header {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 1.6rem;
+                    color: rgba(8, 8, 8, .5);
+                    line-height: 23px;
+                    margin-bottom: 17px;
+                }
+                #main-newstand header .bold {
+                    font-weight: bold;
+                    color: var(--color_title);
+                }
+                #main-newstand-gray {
+                    display: flex;
+                    justify-content: flex-start;
+                    box-sizing: border-box;
+                    background-color: var(--color_option_bg);
+                    height: 50px;
+                    padding: 12px 20px;
+                    border-radius: 4px;
+                }
+                #main-newstand-grid {
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    width: 790px;
+                    height: 224px;
+                    grid-template-rows: repeat(4, 1fr);
+                    grid-template-columns: repeat(6, 1fr);
+                    border: 1px solid var(--color_border_in);
+                    border-radius: 4px;
+                    margin-top: 18px;
+                    grid-gap: 0.99px;
+                    background-color: var(--color_border_in);
+                }
+                #main-newstand-grid > div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    background-color: white;
+                }
+                #main-newstand footer {
+                    padding: 10px 0 11px;
+                    border-top: 1px solid var(--color_border_in);
+                }
             </style>
             <main id="main">
                 <div id="main-left">
                     <aside id="main-left-ad"></aside>
                     <section id="main-newstand">
-                        <div>
+                        <div id="main-newstand-top">
                             <header>
-                                <a href="#">뉴스스탠드</a>
+                                <a href="#" class="bold">뉴스스탠드</a>
                                 <a href="#">언론사편집</a>
                                 <a href="#">엔터</a>
                                 <a href="#">스포츠</a>
@@ -712,7 +760,7 @@
                                 <div id="main-newstand-gray">
                                     <a href="#">전체언론사</a>
                                     <a href="#">연합뉴스</a>
-                                    <a href="#">제로초 네이버 클론 강의 인기의 비결은 실용적인 코드 작성 시연</a>
+                                    <a href="#">제로초 네이버 클론 강의 인기의 비결은 실용적인 코드 작성 시연인 것으로 20년 간의 연구 결과 밝혀져...</a>
                                 </div>
                                 <div>
                                     <a href="#">뉴스스탠드</a>
@@ -770,9 +818,6 @@
                     </section>
                     <aside id="main-right-ad"></aside>
                     <aside id="main-right-issue"></aside>
-                    <a id="main-right-event">
-                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240805_1095/upload_1722820902326S0feF.png" width="420" height="80" alt="네이버쇼핑 최강세일 기간 08/05(월) ~ 08/11(일) 강세일">
-                    </a>
                     <aside id="main-right-ad2">
 
                     </aside>
