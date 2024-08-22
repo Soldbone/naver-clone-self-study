@@ -559,7 +559,9 @@
             </nav>
             <style>
                 #main {
-                    margin-top: 28px;
+                    /* margin-top: 28px; */
+                    /* 위에 큰 interaction형 광고가 생긴 경우 */
+                    margin-top: 159px;
                     display: flex;
                 }
                 #main-left {
@@ -687,6 +689,62 @@
                     flex: 1;
                     padding: 18px 20px;
                 }
+                #main-newstand-top .dot::before {
+                    content: '';
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    margin: 9px 7px 0;
+                    border-radius: 50%;
+                    vertical-align: 5px;
+                }
+                #main-newstand-top .slash, #main-newstand-top .dot {
+                    color: rgba(8, 8, 8, .5);
+                    font-weight: 800;
+                }
+                #main-newstand-top .slash {
+                    position: relative;
+                    padding-left: 26px;
+                }
+                #main-newstand-top .slash::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 4px;
+                    left: 13px;
+                    width: 1px;
+                    height: 15px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    -webkit-transform: skewX(-15deg);
+                    -ms-transform: skewX(-15deg);
+                    transform: skewX(-15deg);
+                }
+                #main-newstand-top .live {
+                    background-color: var(--color_live_news_price);
+                    display: inline-block;
+                    margin: 3px 0 0 5px;
+                    padding: 0 5px 0 4px;
+                    border-radius: 9px;
+                    font-size: 1.1rem;
+                    line-height: 18px;
+                    font-weight: 900;
+                    vertical-align: top;
+                    color: #fff;
+                }
+                #main-newstand-top .live::before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url('./sp_main2.png');
+                    background-size: 443px 424px;
+                    background-position: -308px -287px;
+                    background-repeat: no-repeat;
+                    width: 14px;
+                    height: 10px;
+                    margin: 4px 3px 0 0;
+                }
                 #main-newstand a {
                     text-decoration: none;
                 }
@@ -716,6 +774,87 @@
                     height: 50px;
                     padding: 12px 20px;
                     border-radius: 4px;
+                    font-size: 1.4rem;
+                    line-height: 26px;
+                }
+                #main-newstand-gray .left {
+                    display: flex;
+                    flex: 1;
+                }
+                #main-newstand-gray .left > a:first-of-type {
+                    width: 85.5px;
+                    color: var(--color_caption1);
+                }
+                #main-newstand-gray .left > a:first-of-type::after {
+                    content: '';
+                    background-image: url('./sp_main2.png');
+                    background-size: 443px 424px;
+                    background-position: -143px -176px;
+                    background-repeat: no-repeat;
+                    width: 9px;
+                    height: 6px;
+                    display: inline-block;
+                    margin: 10px 0 0 5px;
+                    vertical-align: 3px;
+                }
+                #main-newstand-gray .left > div {
+                    display: flex;
+                    padding-left: 25px;
+                    position: relative;
+                }
+                #main-newstand-gray .left > div::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    left: 12px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    width: 1px;
+                    height: 12px;
+                }
+                #main-newstand-gray .left div > a:nth-of-type(1) {
+                    vertical-align: top;
+                    display: inline-block;
+                    line-height: 26px;
+                }
+                #main-newstand-gray .left div > a:nth-of-type(1):after {
+                    content: "";
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
+                    margin: 12px 6px 0 6px;
+                    border-radius: 50%;
+                    vertical-align: 4px;
+                }
+                #main-newstand-gray .left div > a:last-of-type {
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 400px;
+                
+                }
+                #main-newstand-gray .right {
+                    display: flex;
+                }
+                #main-newstand-gray .bold {
+                    font-weight: bold;
+                    position: relative;
+                    padding-left: 25px;
+                }
+                #main-newstand-gray .bold::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    left: 12px;
+                    width: 1px;
+                    height: 12px;
+                    background-color: #d3d5d7;
+                    background-color: var(--color_dot_divider);
                 }
                 #main-newstand-grid {
                     display: grid;
@@ -745,26 +884,29 @@
             </style>
             <main id="main">
                 <div id="main-left">
-                    <aside id="main-left-ad"></aside>
+                    <!-- 위에 큰 interaction형 광고로 바뀐 경우 -->
+                    <!-- <aside id="main-left-ad"></aside> -->
                     <section id="main-newstand">
                         <div id="main-newstand-top">
                             <header>
                                 <a href="#" class="bold">뉴스스탠드</a>
-                                <a href="#">언론사편집</a>
-                                <a href="#">엔터</a>
-                                <a href="#">스포츠</a>
-                                <a href="#">경제</a>
-                                <a href="#">쇼핑투데이</a>
+                                <a href="#" class="dot">언론사편집</a>
+                                <a href="#" class="slash">엔터</a>
+                                <a href="#" class="slash">스포츠<span class="live">LIVE</span></a>
+                                <a href="#" class="slash">경제</a>
+                                <a href="#" class="slash">쇼핑투데이</a>
                             </header>
-                            <div>
-                                <div id="main-newstand-gray">
+                            <div id="main-newstand-gray">
+                                <div class="left">
                                     <a href="#">전체언론사</a>
-                                    <a href="#">연합뉴스</a>
-                                    <a href="#">제로초 네이버 클론 강의 인기의 비결은 실용적인 코드 작성 시연인 것으로 20년 간의 연구 결과 밝혀져...</a>
+                                    <div>
+                                        <a href="#">연합뉴스</a>
+                                        <a href="#" id="main-newstand-animation">제로초 네이버 클론 강의 인기의 비결은 실용적인 코드 작성 시연인 것으로 20년 간의 연구 결과 밝혀져...</a>
+                                    </div>
                                 </div>
-                                <div>
+                                <div class="right">
                                     <a href="#">뉴스스탠드</a>
-                                    <a href="#">뉴스홈</a>
+                                    <a href="#" class="bold">뉴스홈</a>
                                 </div>
                             </div>
                             <div id="main-newstand-grid">
